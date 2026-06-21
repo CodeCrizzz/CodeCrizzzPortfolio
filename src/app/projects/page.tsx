@@ -8,7 +8,7 @@ export default function Projects() {
       title: "Boarding House Management System",
       description: "A system that tracks tenants, rooms, and payments efficiently.",
       image: "/assets/img/bhms_img.png",
-      link: "https://bhms.infinityfreeapp.com",
+      link: "https://rentflow-eight-rouge.vercel.app",
       linkText: "View System",
       external: true,
     },
