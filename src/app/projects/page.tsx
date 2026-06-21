@@ -36,6 +36,7 @@ export default function Projects() {
               src={project.image}
               alt={project.title}
               fill
+              unoptimized
               className="object-cover transition-all duration-500 ease-in-out group-hover:blur-sm group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
