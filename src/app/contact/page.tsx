@@ -46,7 +46,7 @@ export default function Contact() {
                 type="text" 
                 placeholder="Your Name" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600"
+                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600"
               />
             </div>
             <div className="w-full">
@@ -54,7 +54,7 @@ export default function Contact() {
                 type="email" 
                 placeholder="Your Email" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600"
+                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600"
               />
             </div>
             <div className="w-full">
@@ -62,12 +62,12 @@ export default function Contact() {
                 placeholder="Your Message" 
                 rows={5} 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600 resize-y"
+                className="w-full p-3 md:p-4 border border-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 resize-y"
               ></textarea>
             </div>
             <button 
               type="submit" 
-              className="mt-2 bg-blue-600 text-white py-3 px-8 rounded-lg font-bold transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_6px_-1px_rgba(37,99,235,0.2)] hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(37,99,235,0.4)] hover:brightness-110 self-start"
+              className="mt-2 bg-blue-600 text-white py-3 px-8 rounded-lg font-bold transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_4px_6px_-1px_rgba(37,99,235,0.2)] hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(37,99,235,0.4)] hover:brightness-110 self-start"
             >
               Send Message
             </button>

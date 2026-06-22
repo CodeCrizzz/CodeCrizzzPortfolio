@@ -29,7 +29,7 @@ export default function Navigation() {
       
       <label
         htmlFor="menu-toggle"
-        className="block md:hidden z-[2001] cursor-pointer text-2xl text-blue-600 transition-transform duration-400 peer-checked:rotate-90 peer-checked:fixed peer-checked:right-[10%]"
+        className="block md:hidden z-[2001] cursor-pointer text-2xl text-blue-600 transition-transform duration-500 peer-checked:rotate-90 peer-checked:fixed peer-checked:right-[10%]"
       >
         <i className="fas fa-bars"></i>
       </label>
@@ -46,14 +46,14 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 md:text-gray-600 text-slate-800 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent bg-slate-100 rounded-lg md:rounded-none relative transition-all duration-300 md:hover:bg-transparent hover:bg-blue-600 hover:text-white md:hover:text-blue-600 md:hover:translate-x-0 hover:translate-x-[5px] group ${
+                className={`flex items-center gap-3 md:text-gray-600 text-slate-800 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent bg-slate-100 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent hover:bg-blue-600 hover:text-white md:hover:text-blue-600 md:hover:translate-x-0 hover:translate-x-[5px] group ${
                   isActive ? "md:text-blue-600 bg-blue-600 text-white md:bg-transparent" : ""
                 }`}
               >
                 <i className={`${link.icon} w-5 text-center md:hidden block`}></i>
                 {link.name}
                 <span
-                  className={`hidden md:block absolute w-full h-[2px] bottom-0 left-0 bg-blue-600 origin-bottom-right transition-transform duration-300 ease-out ${
+                  className={`hidden md:block absolute w-full h-[2px] bottom-0 left-0 bg-blue-600 origin-bottom-right transition-transform duration-500 ease-out ${
                     isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100 group-hover:origin-bottom-left"
                   }`}
                 ></span>

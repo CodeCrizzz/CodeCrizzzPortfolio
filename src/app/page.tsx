@@ -51,7 +51,7 @@ export default function Home() {
               <img 
                 src="/assets/img/profile2.png" 
                 alt="Christian Natividad" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
             </div>
             

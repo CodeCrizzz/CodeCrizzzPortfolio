@@ -41,7 +41,7 @@ export default function Projects() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             
-            <div className="absolute bottom-0 w-full bg-white/95 p-5 text-center z-10 transition-all duration-400 ease-in-out group-hover:opacity-0 group-hover:translate-y-5">
+            <div className="absolute bottom-0 w-full bg-white/95 p-5 text-center z-10 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-5">
               <h3 className="m-0 text-[0.9rem] text-slate-800 font-black">{project.title}</h3>
             </div>
 
@@ -54,14 +54,14 @@ export default function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-[#4201f5] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 hover:bg-[#2de7ff] hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(0,0,0,0.1)]"
+                    className="inline-block bg-[#4201f5] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-500 hover:bg-[#2de7ff] hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(0,0,0,0.1)]"
                   >
                     {project.linkText}
                   </a>
                 ) : (
                   <Link
                     href={project.link}
-                    className="inline-block bg-[#4201f5] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 hover:bg-[#2de7ff] hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(0,0,0,0.1)]"
+                    className="inline-block bg-[#4201f5] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-500 hover:bg-[#2de7ff] hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(0,0,0,0.1)]"
                   >
                     {project.linkText}
                   </Link>
