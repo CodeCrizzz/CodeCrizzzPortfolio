@@ -49,7 +49,7 @@ export default function Home() {
             {/* Image container */}
             <div className="absolute inset-0 bg-white rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white flex items-center justify-center group">
               <img 
-                src="/assets/img/profile.png" 
+                src="/assets/img/profile2.png" 
                 alt="Christian Natividad" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
