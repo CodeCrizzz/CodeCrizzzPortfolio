@@ -1,5 +1,5 @@
 import Reveal from "@/components/Reveal";
-import TiltImage from "@/components/TiltImage";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -28,10 +28,13 @@ export default function About() {
               <div className="shrink-0 relative group">
                 {/* Decorative rings behind the image */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-                <TiltImage 
+                <Image 
                   src="/assets/img/profile.png" 
                   alt="Christian Natividad" 
-                  className="!w-48 !h-48 md:!w-64 md:!h-64 rounded-full border-4 border-white shadow-2xl relative z-10"
+                  width={256}
+                  height={256}
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-2xl relative z-10 object-cover"
+                  priority
                 />
               </div>
               
