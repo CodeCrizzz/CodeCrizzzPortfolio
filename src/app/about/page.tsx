@@ -26,14 +26,12 @@ export default function About() {
             
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-center gap-12">
               <div className="shrink-0 relative group">
-                {/* Decorative rings behind the image */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
                 <Image 
                   src="/assets/img/profile.png" 
                   alt="Christian Natividad" 
                   width={256}
-                  height={256}
-                  className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-2xl relative z-10 object-cover"
+                  height={320}
+                  className="w-48 h-64 md:w-64 md:h-80 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-300 hover:scale-105"
                   priority
                 />
               </div>
@@ -85,7 +83,7 @@ export default function About() {
                   <h3 className="text-2xl md:text-3xl font-bold text-slate-800">Tech Stack</h3>
                 </div>
                 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-h-[280px] overflow-y-auto custom-scrollbar pr-2 pb-2">
                   {skills.map((skill) => (
                     <div
                       key={skill.name}
