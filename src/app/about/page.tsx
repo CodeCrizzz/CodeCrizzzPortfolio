@@ -16,6 +16,9 @@ export default function About() {
     { name: "Node.js", icon: "fa-brands fa-node text-green-600" },
     { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
     { name: "MySQL", icon: "devicon-mysql-plain colored" },
+    { name: "Supabase", icon: "devicon-supabase-plain colored"},
+    { name: "Git", icon: "devicon-git-plain colored"},
+    { name: "GitHub", icon: "devicon-github-plain colored"},
   ];
 
   return (
