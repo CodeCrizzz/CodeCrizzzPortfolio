@@ -38,7 +38,7 @@ export default function About() {
                   alt="Christian Natividad" 
                   width={256}
                   height={320}
-                  className="w-48 h-64 md:w-64 md:h-80 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-48 h-64 md:w-64 md:h-100 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
                   priority
                 />
               </div>
@@ -55,10 +55,10 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 text-slate-600 leading-relaxed text-base md:text-lg font-medium">
                   <p>
-                    I am a 3rd-year <strong className="text-slate-800">BS Information Systems</strong> student at JRMSU Main Campus. I build functional, high-efficiency web applications by combining system analysis with user-centric design.
+                    I am a <strong className="text-slate-800">BS Information Systems</strong> student at JRMSU Main Campus. I build functional, high-efficiency web applications by combining system analysis with user-centric design.
                   </p>
                   <p>
-                    I’m dedicated to translating complex business needs into intuitive and visually appealing technical solutions. As a student developer focused on collaborative problem-solving, I aim to build meaningful digital tools that solve real-world problems.
+                    A motivated BSIS student seeking for an opportunity to use my skills and knowledge in a real-world environment. Eager to transition academic experience in building functional web applications into real-world practice. Committed to supporting a collaborative development team, learning modern web technologies, and contributing to clean, responsive user interface
                   </p>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
