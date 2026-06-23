@@ -31,12 +31,16 @@ export default function Home() {
               View Projects
               <i className="fa-solid fa-arrow-right text-base"></i>
             </Link>
-            <Link
-              href="/about"
-              className="flex items-center justify-center bg-white border-2 border-slate-200 text-slate-700 py-4 px-10 rounded-xl font-bold text-lg transition-all hover:border-slate-300 hover:bg-slate-50 hover:-translate-y-0.5"
+            <a
+              href="/cv/CV.pdf"
+              download="CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-white border-2 border-slate-200 text-slate-700 py-4 px-10 rounded-xl font-bold text-lg transition-all hover:border-slate-300 hover:bg-slate-50 hover:-translate-y-0.5"
             >
-              Learn More
-            </Link>
+              Download CV
+              <i className="fa-solid fa-download text-base"></i>
+            </a>
           </div>
         </div>
 
