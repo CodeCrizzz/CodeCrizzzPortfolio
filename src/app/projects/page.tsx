@@ -2,6 +2,7 @@ import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
 
+// Main function component to display the projects page
 export default function Projects() {
   const projects = [
     {
@@ -22,6 +23,7 @@ export default function Projects() {
     },
   ];
 
+  // Return the component with the projects data
   return (
     <main className="flex-1 w-full max-w-[1100px] mx-auto my-12 px-5 flex flex-col items-center">
       <Reveal className="text-center mb-12">

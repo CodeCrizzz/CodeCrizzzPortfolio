@@ -4,10 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+// Main function component that is used to navigate between the pages 
 export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
+  // Array of links to navigate between the pages
   const links = [
     { name: "Home", href: "/", icon: "fas fa-home" },
     { name: "About", href: "/about", icon: "fas fa-user" },
@@ -15,6 +17,7 @@ export default function Navigation() {
     { name: "Contact", href: "/contact", icon: "fas fa-envelope" },
   ];
 
+  // Return the component with the navigation
   return (
     <nav className="flex justify-between items-center px-6 md:px-[10%] py-5 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] sticky top-0 z-50">
       <div className="font-extrabold text-2xl text-blue-600">CodeCrizzz</div>
@@ -26,7 +29,8 @@ export default function Navigation() {
         checked={isOpen}
         onChange={() => setIsOpen(!isOpen)}
       />
-      
+
+      {/* Hamburger menu button for mobile devices */}
       <label
         htmlFor="menu-toggle"
         className="block md:hidden z-[2001] cursor-pointer text-2xl text-blue-600 transition-transform duration-500 peer-checked:rotate-90 peer-checked:fixed peer-checked:right-[10%]"
@@ -34,6 +38,7 @@ export default function Navigation() {
         <i className="fas fa-bars"></i>
       </label>
 
+      {/* List of links to navigate between the pages */}
       <ul
         className={`flex gap-[30px] list-none md:flex-row flex-col md:static fixed top-0 md:h-auto h-screen md:w-auto w-[65%] md:bg-transparent bg-white/98 backdrop-blur-md md:p-0 pt-20 px-8 transition-all duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1.0)] z-[2000] md:shadow-none shadow-[-5px_0_20px_rgba(0,0,0,0.1)] ${
           isOpen ? "right-0" : "-right-full md:right-auto"

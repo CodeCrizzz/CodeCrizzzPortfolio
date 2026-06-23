@@ -2,6 +2,7 @@ import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
 
+// Main function component to display the about page
 export default function About() {
   const skills = [
     { name: "HTML5", icon: "devicon-html5-plain colored" },
@@ -70,8 +71,8 @@ export default function About() {
         {/* Bottom Section - Bento Grid for Skills & Education */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
           
-          {/* Tech Stack - Spans 2 columns */}
-          <Reveal className="lg:col-span-2">
+            <Reveal className="lg:col-span-2">
+            {/* Tech Stack Section */}
             <div className="h-full bg-white/60 backdrop-blur-2xl border border-white/80 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
               
@@ -83,6 +84,7 @@ export default function About() {
                   <h3 className="text-2xl md:text-3xl font-bold text-slate-800">Tech Stack</h3>
                 </div>
                 
+                {/* Grid layout for the tech stack */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-h-[280px] overflow-y-auto custom-scrollbar pr-2 pb-2">
                   {skills.map((skill) => (
                     <div
@@ -98,8 +100,8 @@ export default function About() {
             </div>
           </Reveal>
 
-          {/* Education - Spans 1 column */}
           <Reveal className="lg:col-span-1">
+            {/* Education Section */}
             <div className="h-full bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 rounded-[2.5rem] shadow-[0_20px_40px_rgb(0,0,0,0.2)] p-8 md:p-10 text-white relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-6 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-1000">
                 <i className="fa-solid fa-graduation-cap text-9xl"></i>

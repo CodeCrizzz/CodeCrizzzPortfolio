@@ -1,5 +1,6 @@
 import Reveal from "@/components/Reveal";
 
+// Main function component to display the contact page 
 export default function Contact() {
   return (
     <main className="flex-1 w-full max-w-[900px] mx-auto my-12 px-5">
@@ -9,6 +10,7 @@ export default function Contact() {
           <p className="text-slate-500 text-lg">Have a project in mind or just want to say hi? Feel free to message me!</p>
         </header>
 
+        {/* Grid layout for the contact information */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 mt-8">
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
@@ -18,7 +20,8 @@ export default function Contact() {
                 <p className="text-slate-600 text-sm md:text-base break-all">natividadchristian670@gmail.com</p>
               </div>
             </div>
-            
+
+            {/* Location contact information */}
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
               <i className="fas fa-location-dot text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl"></i>
               <div>
@@ -26,7 +29,8 @@ export default function Contact() {
                 <p className="text-slate-600 text-sm md:text-base">Sicayab, Dipolog City, Zamboanga Peninsula, Philippines</p>
               </div>
             </div>
-            
+
+            {/* LinkedIn contact information */}
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
               <i className="fab fa-linkedin text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl"></i>
               <div>
@@ -40,6 +44,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Contact form for the user to fill out */}
           <form action="#" className="bg-white p-6 md:p-10 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col gap-5">
             <div className="w-full">
               <input 

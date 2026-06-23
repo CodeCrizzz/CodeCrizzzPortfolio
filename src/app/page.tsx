@@ -2,6 +2,7 @@ import Link from "next/link";
 import TypingText from "@/components/TypingText";
 import Reveal from "@/components/Reveal";
 
+// Main function component used to display the home page
 export default function Home() {
   return (
     <main className="flex-1 w-full max-w-[1200px] mx-auto flex items-center justify-center p-5 md:p-8 xl:p-10">

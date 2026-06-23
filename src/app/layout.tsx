@@ -4,13 +4,16 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+// Font for the website
 const inter = Inter({ subsets: ["latin"] });
 
+// Metadata for the website
 export const metadata: Metadata = {
   title: "CodeCrizzz | Portfolio",
   description: "I'm a student that has passion about learning and building projects in web development. Thank you for visiting.",
 };
 
+// Main function component to display the layout of the website 
 export default function RootLayout({
   children,
 }: Readonly<{

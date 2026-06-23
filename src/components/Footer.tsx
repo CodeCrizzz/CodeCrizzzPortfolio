@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// Main function component that is used to display the footer of the website 
 export default function Footer() {
   return (
     <footer className="shrink-0 w-full bg-white border-t border-slate-200 py-5 mt-auto">

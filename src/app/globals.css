@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Theme variables for the website */
 @theme {
   --animate-blink: blink 0.8s infinite;
   --animate-fade-in-up: fadeInUp 1s ease-out forwards;
@@ -19,11 +20,13 @@
   }
 }
 
+/* Root variables for the website */
 :root {
   --background: #f8fafc;
   --foreground: #1e293b;
 }
 
+/* Body styles for the website */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -37,9 +40,9 @@ body {
   background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #cbd5e1; /* slate-300 */
+  background-color: #cbd5e1; 
   border-radius: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #94a3b8; /* slate-400 */
+  background-color: #94a3b8; 
 }
