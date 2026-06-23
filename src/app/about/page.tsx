@@ -9,8 +9,11 @@ export default function About() {
     { name: "CSS3", icon: "devicon-css3-plain colored" },
     { name: "JavaScript", icon: "devicon-javascript-plain colored" },
     { name: "PHP", icon: "devicon-php-plain colored" },
-    { name: "Node.js", icon: "fa-brands fa-node text-green-600" },
     { name: "C#", icon: "devicon-csharp-plain colored" },
+    { name: "React", icon: "devicon-react-plain colored"},
+    { name: "Next.js", icon: "devicon-nextjs-plain colored"},
+    { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored"},
+    { name: "Node.js", icon: "fa-brands fa-node text-green-600" },
     { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
     { name: "MySQL", icon: "devicon-mysql-plain colored" },
   ];
