@@ -48,7 +48,7 @@ export default function About() {
                   </span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-slate-800 mb-6 tracking-tight">
-                  Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Christian Natividad</span>
+                  Hi, I'm <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600">Christian Natividad</span>
                 </h2>
                 <div className="space-y-4 text-slate-600 leading-relaxed text-base md:text-lg font-medium">
                   <p>
@@ -77,7 +77,7 @@ export default function About() {
             <Reveal className="lg:col-span-2">
             {/* Tech Stack Section */}
             <div className="h-full bg-white/60 backdrop-blur-2xl border border-white/80 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
               
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-8">
@@ -105,7 +105,7 @@ export default function About() {
 
           <Reveal className="lg:col-span-1">
             {/* Education Section */}
-            <div className="h-full bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 rounded-[2.5rem] shadow-[0_20px_40px_rgb(0,0,0,0.2)] p-8 md:p-10 text-white relative overflow-hidden group">
+            <div className="h-full bg-linear-to-br from-slate-900 via-blue-950 to-slate-900 rounded-[2.5rem] shadow-[0_20px_40px_rgb(0,0,0,0.2)] p-8 md:p-10 text-white relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-6 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-1000">
                 <i className="fa-solid fa-graduation-cap text-9xl"></i>
               </div>
