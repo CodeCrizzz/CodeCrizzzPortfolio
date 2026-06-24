@@ -21,9 +21,7 @@ export default function Home() {
           </div>
           
           <p className="text-base md:text-lg lg:text-xl text-slate-600 max-w-xl mb-10 leading-relaxed">
-            I'm Christian Natividad, a 3rd-year BSIS student with a passion for learning and building projects in web development. Thank you for visiting.
-          </p>
-          
+            Passionate about building functional, responsive web applications. Welcome to my portfolio. Thank you for dropping by!        </p>
           <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
             <Link
               href="/projects"
