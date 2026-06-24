@@ -22,7 +22,7 @@ export default function Navigation() {
   // Return the component with the navigation
   return (
     <nav className="flex justify-between items-center px-6 md:px-[10%] py-5 bg-white dark:bg-slate-950 shadow-[0_2px_10px_rgba(0,0,0,0.05)] dark:shadow-none dark:border-b dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
-      <div className="font-extrabold text-2xl text-blue-600">CodeCrizzz</div>
+      <div className="font-extrabold text-2xl text-blue-600 dark:text-white">{"CodeCrizzz</>"}</div>
 
       <input
         type="checkbox"
