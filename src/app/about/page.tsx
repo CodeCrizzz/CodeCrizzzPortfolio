@@ -44,7 +44,7 @@ export default function About() {
       <div className="flex flex-col gap-8">
         {/* Top Section - About Me & Image */}
         <Reveal className="w-full">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 dark:bg-black/60 backdrop-blur-2xl border border-white/80 dark:border-zinc-800 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14 transition-colors duration-300">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl border border-white/80 dark:border-slate-800 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14 transition-colors duration-300">
             {/* Background glowing orbs */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/20 dark:bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
             <div className="absolute bottom-0 -left-10 w-80 h-80 bg-purple-400/20 dark:bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" style={{ animationDelay: '2s' }}></div>
@@ -57,7 +57,7 @@ export default function About() {
                   width={800}
                   height={1000}
                   quality={100}
-                  className="w-48 h-64 md:w-70 md:h-100 rounded-2xl border-4 border-white dark:border-zinc-800 shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-48 h-64 md:w-70 md:h-100 rounded-2xl border-4 border-white dark:border-slate-800 shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
                   priority
                 />
               </div>
@@ -81,10 +81,10 @@ export default function About() {
                   </p>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
-                  <Link href="/projects" className="px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors shadow-lg hover:shadow-blue-500/30">
+                  <Link href="/projects" className="px-8 py-3.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors shadow-lg hover:shadow-blue-500/30">
                     View My Work
                   </Link>
-                  <Link href="/contact" className="px-8 py-3.5 bg-white dark:bg-zinc-900 text-slate-800 dark:text-slate-200 rounded-full font-bold border border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 hover:bg-slate-50 dark:hover:bg-zinc-800 transition-all shadow-sm">
+                  <Link href="/contact" className="px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-full font-bold border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
                     Contact Me
                   </Link>
                 </div>
@@ -98,7 +98,7 @@ export default function About() {
           
             <Reveal className="lg:col-span-2">
             {/* Tech Stack Section */}
-            <div className="h-full bg-white/60 dark:bg-black/60 backdrop-blur-2xl border border-white/80 dark:border-zinc-800 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group transition-colors duration-300">
+            <div className="h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl border border-white/80 dark:border-slate-800 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group transition-colors duration-300">
               <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 dark:from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
               
               <div className="relative z-10">
@@ -116,7 +116,7 @@ export default function About() {
                     return (
                     <div
                       key={skill.name}
-                      className="flex flex-col items-center justify-center gap-3 bg-white dark:bg-zinc-900 p-5 rounded-2xl border border-slate-100 dark:border-zinc-800 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(37,99,235,0.15)] cursor-pointer group/skill"
+                      className="flex flex-col items-center justify-center gap-3 bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(37,99,235,0.15)] cursor-pointer group/skill"
                     >
                       <Icon className={`${skill.color} group-hover/skill:scale-110 group-hover/skill:rotate-3 transition-transform duration-500`} size={40} />
                       <span className="font-bold text-slate-700 dark:text-slate-300 text-sm">{skill.name}</span>

@@ -15,7 +15,7 @@ export default function Contact() {
         {/* Grid layout for the contact information */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 mt-8">
           <div className="flex flex-col gap-8">
-            <div className="flex items-center gap-5 bg-white dark:bg-zinc-900 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
+            <div className="flex items-center gap-5 bg-white dark:bg-slate-800 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
               <Mail className="text-2xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 dark:text-white font-bold mb-1">Gmail</h3>
@@ -24,7 +24,7 @@ export default function Contact() {
             </div>
 
             {/* Location contact information */}
-            <div className="flex items-center gap-5 bg-white dark:bg-zinc-900 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
+            <div className="flex items-center gap-5 bg-white dark:bg-slate-800 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
               <MapPin className="text-2xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 dark:text-white font-bold mb-1">Location</h3>
@@ -33,7 +33,7 @@ export default function Contact() {
             </div>
 
             {/* LinkedIn contact information */}
-            <div className="flex items-center gap-5 bg-white dark:bg-zinc-900 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
+            <div className="flex items-center gap-5 bg-white dark:bg-slate-800 p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-colors duration-300">
               <FaLinkedin className="text-2xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 dark:text-white font-bold mb-1">LinkedIn</h3>
@@ -47,13 +47,13 @@ export default function Contact() {
           </div>
 
           {/* Contact form for the user to fill out */}
-          <form action="#" className="bg-white dark:bg-zinc-900 p-6 md:p-10 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col gap-5 transition-colors duration-300">
+          <form action="#" className="bg-white dark:bg-slate-800 p-6 md:p-10 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex flex-col gap-5 transition-colors duration-300">
             <div className="w-full">
               <input 
                 type="text" 
                 placeholder="Your Name" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-zinc-800 bg-white dark:bg-black text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
               />
             </div>
             <div className="w-full">
@@ -61,7 +61,7 @@ export default function Contact() {
                 type="email" 
                 placeholder="Your Email" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-zinc-800 bg-white dark:bg-black text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
               />
             </div>
             <div className="w-full">
@@ -69,7 +69,7 @@ export default function Contact() {
                 placeholder="Your Message" 
                 rows={5} 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-zinc-800 bg-white dark:bg-black text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500 resize-y"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500 resize-y"
               ></textarea>
             </div>
             <button 

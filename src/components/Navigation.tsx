@@ -21,7 +21,7 @@ export default function Navigation() {
 
   // Return the component with the navigation
   return (
-    <nav className="flex justify-between items-center px-6 md:px-[10%] py-5 bg-white dark:bg-black shadow-[0_2px_10px_rgba(0,0,0,0.05)] dark:shadow-none dark:border-b dark:border-zinc-800 sticky top-0 z-50 transition-colors duration-300">
+    <nav className="flex justify-between items-center px-6 md:px-[10%] py-5 bg-white dark:bg-slate-950 shadow-[0_2px_10px_rgba(0,0,0,0.05)] dark:shadow-none dark:border-b dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
       <div className="font-extrabold text-2xl text-blue-600">CodeCrizzz</div>
 
       <input
@@ -42,7 +42,7 @@ export default function Navigation() {
 
       {/* List of links to navigate between the pages */}
       <ul
-        className={`flex gap-[30px] list-none md:flex-row flex-col md:static fixed top-0 md:h-auto h-screen md:w-auto w-[65%] md:bg-transparent bg-white/98 dark:bg-black/98 backdrop-blur-md md:p-0 pt-20 px-8 transition-all duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1.0)] z-[2000] md:shadow-none shadow-[-5px_0_20px_rgba(0,0,0,0.1)] ${
+        className={`flex gap-[30px] list-none md:flex-row flex-col md:static fixed top-0 md:h-auto h-screen md:w-auto w-[65%] md:bg-transparent bg-white/98 dark:bg-slate-950/98 backdrop-blur-md md:p-0 pt-20 px-8 transition-all duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1.0)] z-[2000] md:shadow-none shadow-[-5px_0_20px_rgba(0,0,0,0.1)] ${
           isOpen ? "right-0" : "-right-full md:right-auto"
         }`}
       >
@@ -54,7 +54,7 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 md:text-slate-600 dark:md:text-slate-300 text-slate-800 dark:text-slate-200 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent dark:md:bg-transparent bg-slate-100 dark:bg-zinc-800 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent dark:md:hover:bg-transparent hover:bg-blue-600 dark:hover:bg-blue-900/30 hover:text-white dark:hover:text-blue-400 md:hover:text-blue-600 dark:md:hover:text-blue-400 md:hover:translate-x-0 hover:translate-x-[5px] group ${
+                className={`flex items-center gap-3 md:text-slate-600 dark:md:text-slate-300 text-slate-800 dark:text-slate-200 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent dark:md:bg-transparent bg-slate-100 dark:bg-slate-800 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent dark:md:hover:bg-transparent hover:bg-blue-600 dark:hover:bg-blue-900/30 hover:text-white dark:hover:text-blue-400 md:hover:text-blue-600 dark:md:hover:text-blue-400 md:hover:translate-x-0 hover:translate-x-[5px] group ${
                   isActive ? "md:text-blue-600 dark:md:text-blue-400 bg-blue-600 dark:bg-blue-900/40 text-white dark:text-blue-400 md:bg-transparent dark:md:bg-transparent" : ""
                 }`}
               >

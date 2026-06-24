@@ -35,7 +35,7 @@ export default function Home() {
               download="CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white dark:bg-zinc-900 border-2 border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-slate-200 py-4 px-10 rounded-xl font-bold text-lg transition-all hover:border-slate-300 dark:hover:border-zinc-700 hover:bg-slate-50 dark:hover:bg-zinc-800 hover:-translate-y-0.5"
+              className="flex items-center justify-center gap-3 bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 py-4 px-10 rounded-xl font-bold text-lg transition-all hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 hover:-translate-y-0.5"
             >
               Download CV
               <Download className="text-base" size={20} />
@@ -47,11 +47,11 @@ export default function Home() {
         <div className="flex justify-center lg:justify-end order-1 lg:order-2">
           <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px]">
             {/* Background decorative shapes */}
-            <div className="absolute inset-0 bg-blue-50 dark:bg-zinc-900 rounded-[3rem] rotate-6 scale-105 transition-transform duration-500 hover:rotate-12"></div>
-            <div className="absolute inset-0 bg-slate-100 dark:bg-zinc-800 rounded-[3rem] -rotate-3 scale-105 transition-transform duration-500 hover:-rotate-6 border border-slate-200 dark:border-zinc-700"></div>
+            <div className="absolute inset-0 bg-blue-50 dark:bg-slate-800 rounded-[3rem] rotate-6 scale-105"></div>
+            <div className="absolute inset-0 bg-slate-100 dark:bg-slate-700 rounded-[3rem] -rotate-3 scale-105 border border-slate-200 dark:border-slate-600"></div>
             
             {/* Image container */}
-            <div className="absolute inset-0 bg-white dark:bg-black rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white dark:border-zinc-900 flex items-center justify-center group">
+            <div className="absolute inset-0 bg-white dark:bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 flex items-center justify-center group">
               <img 
                 src="/assets/img/profile2.png" 
                 alt="Christian Natividad" 
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
             
             {/* Floating element */}
-            <div className="absolute -bottom-6 -left-6 bg-white dark:bg-zinc-900 p-4 md:p-5 rounded-2xl shadow-xl border border-slate-100 dark:border-zinc-800 animate-bounce" style={{ animationDuration: '3s' }}>
+            <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 md:p-5 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

@@ -4,7 +4,7 @@ import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 // Main function component that is used to display the footer of the website 
 export default function Footer() {
   return (
-    <footer className="shrink-0 w-full bg-white dark:bg-black border-t border-slate-200 dark:border-zinc-800 py-5 mt-auto transition-colors duration-300">
+    <footer className="shrink-0 w-full bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 py-5 mt-auto transition-colors duration-300">
       <div className="flex flex-col items-center gap-3">
         <p className="text-slate-800 dark:text-slate-200 text-sm font-bold">&copy; CodeCrizzz | My Portfolio</p>
         <div className="flex gap-5">
