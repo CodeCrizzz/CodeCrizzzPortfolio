@@ -2,41 +2,33 @@ import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
 import { 
-  FileCode2, 
-  Palette, 
   Code, 
-  Server, 
-  FileCode, 
-  Atom, 
-  Blocks, 
-  Wind, 
-  Box, 
-  Database, 
-  Cloud, 
-  GitBranch, 
   GraduationCap, 
   MapPin 
 } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiJavascript, SiPhp, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiPostgresql, SiMysql, SiSupabase, SiGit, SiDotnet } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 // Main function component to display the about page
 export default function About() {
   // Skills to be displayed on the tech stack section
   const skills = [
-    { name: "HTML5", icon: FileCode2, color: "text-orange-500" },
-    { name: "CSS3", icon: Palette, color: "text-blue-500" },
-    { name: "JavaScript", icon: Code, color: "text-yellow-400" },
-    { name: "PHP", icon: Server, color: "text-indigo-400" },
-    { name: "C#", icon: FileCode, color: "text-purple-600" },
-    { name: "React", icon: Atom, color: "text-blue-400"},
-    { name: "Next.js", icon: Blocks, color: "text-slate-800 dark:text-slate-200"},
-    { name: "Tailwind CSS", icon: Wind, color: "text-cyan-400"},
-    { name: "Node.js", icon: Box, color: "text-green-600" },
-    { name: "PostgreSQL", icon: Database, color: "text-blue-500" },
-    { name: "MySQL", icon: Database, color: "text-orange-400" },
-    { name: "Supabase", icon: Cloud, color: "text-green-500"},
-    { name: "Git", icon: GitBranch, color: "text-orange-600"},
-    { name: "GitHub", icon: FaGithub, color: "text-slate-800 dark:text-slate-200"},
+    { name: "HTML5", icon: FaHtml5, color: "text-[#E34F26]" },
+    { name: "CSS3", icon: FaCss3Alt, color: "text-[#1572B6]" },
+    { name: "JavaScript", icon: SiJavascript, color: "text-[#F7DF1E]" },
+    { name: "PHP", icon: SiPhp, color: "text-[#777BB4]" },
+    { name: "C#", icon: TbBrandCSharp, color: "text-[#239120]" },
+    { name: "React", icon: SiReact, color: "text-[#61DAFB]"},
+    { name: "DotNet", icon: SiDotnet, color: "text-[#FFFFF]" },  
+    { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white"},
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-[#06B6D4]"},
+    { name: "Node.js", icon: SiNodedotjs, color: "text-[#339933]" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#4169E1]" },
+    { name: "MySQL", icon: SiMysql, color: "text-[#4479A1]" },
+    { name: "Supabase", icon: SiSupabase, color: "text-[#3ECF8E]"},
+    { name: "Git", icon: SiGit, color: "text-[#F05032]"},
+    { name: "GitHub", icon: FaGithub, color: "text-black dark:text-white"},
   ];
 
   return (
