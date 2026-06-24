@@ -1,24 +1,41 @@
 import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
+import { 
+  FileCode2, 
+  Palette, 
+  Code, 
+  Server, 
+  FileCode, 
+  Atom, 
+  Blocks, 
+  Wind, 
+  Box, 
+  Database, 
+  Cloud, 
+  GitBranch, 
+  GraduationCap, 
+  MapPin 
+} from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 // Main function component to display the about page
 export default function About() {
   const skills = [
-    { name: "HTML5", icon: "devicon-html5-plain colored" },
-    { name: "CSS3", icon: "devicon-css3-plain colored" },
-    { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-    { name: "PHP", icon: "devicon-php-plain colored" },
-    { name: "C#", icon: "devicon-csharp-plain colored" },
-    { name: "React", icon: "devicon-react-plain colored"},
-    { name: "Next.js", icon: "devicon-nextjs-plain colored"},
-    { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored"},
-    { name: "Node.js", icon: "fa-brands fa-node text-green-600" },
-    { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
-    { name: "MySQL", icon: "devicon-mysql-plain colored" },
-    { name: "Supabase", icon: "devicon-supabase-plain colored"},
-    { name: "Git", icon: "devicon-git-plain colored"},
-    { name: "GitHub", icon: "devicon-github-plain colored"},
+    { name: "HTML5", icon: FileCode2, color: "text-orange-500" },
+    { name: "CSS3", icon: Palette, color: "text-blue-500" },
+    { name: "JavaScript", icon: Code, color: "text-yellow-400" },
+    { name: "PHP", icon: Server, color: "text-indigo-400" },
+    { name: "C#", icon: FileCode, color: "text-purple-600" },
+    { name: "React", icon: Atom, color: "text-blue-400"},
+    { name: "Next.js", icon: Blocks, color: "text-slate-800"},
+    { name: "Tailwind CSS", icon: Wind, color: "text-cyan-400"},
+    { name: "Node.js", icon: Box, color: "text-green-600" },
+    { name: "PostgreSQL", icon: Database, color: "text-blue-500" },
+    { name: "MySQL", icon: Database, color: "text-orange-400" },
+    { name: "Supabase", icon: Cloud, color: "text-green-500"},
+    { name: "Git", icon: GitBranch, color: "text-orange-600"},
+    { name: "GitHub", icon: FaGithub, color: "text-slate-800"},
   ];
 
   return (
@@ -85,22 +102,24 @@ export default function About() {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl shadow-inner border border-blue-200">
-                    <i className="fa-solid fa-code"></i>
+                    <Code size={24} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-slate-800">Tech Stack</h3>
                 </div>
                 
                 {/* Grid layout for the tech stack */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-h-[280px] overflow-y-auto custom-scrollbar pr-2 pb-2">
-                  {skills.map((skill) => (
+                  {skills.map((skill) => {
+                    const Icon = skill.icon;
+                    return (
                     <div
                       key={skill.name}
                       className="flex flex-col items-center justify-center gap-3 bg-white p-5 rounded-2xl border border-slate-100 hover:border-blue-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(37,99,235,0.15)] cursor-pointer group/skill"
                     >
-                      <i className={`${skill.icon} text-4xl group-hover/skill:scale-110 group-hover/skill:rotate-3 transition-transform duration-500`}></i>
+                      <Icon className={`${skill.color} group-hover/skill:scale-110 group-hover/skill:rotate-3 transition-transform duration-500`} size={40} />
                       <span className="font-bold text-slate-700 text-sm">{skill.name}</span>
                     </div>
-                  ))}
+                  )})}
                 </div>
               </div>
             </div>
@@ -110,14 +129,14 @@ export default function About() {
             {/* Education Section */}
             <div className="h-full bg-linear-to-br from-slate-900 via-blue-950 to-slate-900 rounded-[2.5rem] shadow-[0_20px_40px_rgb(0,0,0,0.2)] p-8 md:p-10 text-white relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-6 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-1000">
-                <i className="fa-solid fa-graduation-cap text-9xl"></i>
+                <GraduationCap size={128} />
               </div>
               <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
               
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-8">
                   <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-2xl mb-6 border border-white/20 shadow-inner">
-                    <i className="fa-solid fa-graduation-cap text-blue-300"></i>
+                    <GraduationCap className="text-blue-300" size={24} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">Education</h3>
                 </div>
@@ -130,7 +149,7 @@ export default function About() {
                     <h4 className="text-xl font-bold text-white leading-tight">BS Information Systems</h4>
                     <p className="text-blue-200 font-medium text-sm">Jose Rizal Memorial State University</p>
                     <div className="flex items-center gap-2 text-slate-400 text-xs pt-2 mt-2 border-t border-white/10">
-                      <i className="fa-solid fa-location-dot"></i>
+                      <MapPin size={16} />
                       <span>Main Campus, Dapitan City</span>
                     </div>
                   </div>

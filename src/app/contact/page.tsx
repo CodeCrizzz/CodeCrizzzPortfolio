@@ -1,4 +1,6 @@
 import Reveal from "@/components/Reveal";
+import { Mail, MapPin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 // Main function component to display the contact page 
 export default function Contact() {
@@ -14,7 +16,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 mt-8">
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
-              <i className="fas fa-envelope text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl"></i>
+              <Mail className="text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 font-bold mb-1">Gmail</h3>
                 <p className="text-slate-600 text-sm md:text-base break-all">natividadchristian670@gmail.com</p>
@@ -23,7 +25,7 @@ export default function Contact() {
 
             {/* Location contact information */}
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
-              <i className="fas fa-location-dot text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl"></i>
+              <MapPin className="text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 font-bold mb-1">Location</h3>
                 <p className="text-slate-600 text-sm md:text-base">Sicayab, Dipolog City, Zamboanga Peninsula, Philippines</p>
@@ -32,7 +34,7 @@ export default function Contact() {
 
             {/* LinkedIn contact information */}
             <div className="flex items-center gap-5 bg-white p-5 rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.05)]">
-              <i className="fab fa-linkedin text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl"></i>
+              <FaLinkedin className="text-2xl text-blue-600 bg-blue-50 p-4 rounded-xl box-content" size={24} />
               <div>
                 <h3 className="text-[1.1rem] text-slate-800 font-bold mb-1">LinkedIn</h3>
                 <p className="text-slate-600 text-sm md:text-base break-all">
