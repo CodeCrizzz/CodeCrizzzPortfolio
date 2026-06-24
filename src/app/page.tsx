@@ -1,7 +1,7 @@
 import Link from "next/link";
 import TypingText from "@/components/TypingText";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, Download, Zap } from "lucide-react";
+import { ArrowRight, Download, Handshake } from "lucide-react";
 
 // Main function component used to display the home page
 export default function Home() {
@@ -66,7 +66,7 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 text-green-600 rounded-full relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <Zap className="text-xl relative z-10" size={24} />
+                  <Handshake className="text-xl relative z-10" size={24} />
                 </div>
                 <div>
                   <p className="text-sm font-black text-slate-800">Open for collaboration</p>
