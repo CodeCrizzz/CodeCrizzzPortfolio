@@ -21,6 +21,7 @@ import { FaGithub } from "react-icons/fa";
 
 // Main function component to display the about page
 export default function About() {
+  // Skills to be displayed on the tech stack section
   const skills = [
     { name: "HTML5", icon: FileCode2, color: "text-orange-500" },
     { name: "CSS3", icon: Palette, color: "text-blue-500" },
@@ -53,9 +54,10 @@ export default function About() {
                 <Image 
                   src="/assets/img/profile.png" 
                   alt="Christian Natividad" 
-                  width={256}
-                  height={320}
-                  className="w-48 h-64 md:w-64 md:h-100 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
+                  width={800}
+                  height={1000}
+                  quality={100}
+                  className="w-48 h-64 md:w-70 md:h-100 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
                   priority
                 />
               </div>
