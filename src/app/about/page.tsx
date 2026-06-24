@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +15,8 @@ import { TbBrandCSharp } from "react-icons/tb";
 
 // Main function component to display the about page
 export default function About() {
+  const [showMore, setShowMore] = useState(false);
+
   // Skills to be displayed on the tech stack section
   const skills = [
     { name: "HTML5", icon: FaHtml5, color: "text-[#E34F26]" },
@@ -20,7 +25,7 @@ export default function About() {
     { name: "PHP", icon: SiPhp, color: "text-[#777BB4]" },
     { name: "C#", icon: TbBrandCSharp, color: "text-[#239120]" },
     { name: "React", icon: SiReact, color: "text-[#61DAFB]"},
-    { name: "DotNet", icon: SiDotnet, color: "text-[#FFFFF]" },  
+    { name: ".NET", icon: SiDotnet, color: "text-[#512BD4] dark:text-white" },  
     { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white"},
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-[#06B6D4]"},
     { name: "Node.js", icon: SiNodedotjs, color: "text-[#339933]" },
@@ -68,9 +73,23 @@ export default function About() {
                   <p>
                     I am a <strong className="text-slate-800 dark:text-slate-200">BS Information Systems</strong> student at JRMSU Main Campus. I build functional, high-efficiency web applications by combining system analysis with user-centric design.
                   </p>
-                  <p>
-                    A motivated BSIS student seeking for an opportunity to use my skills and knowledge in a real-world environment. Eager to transition academic experience in building functional web applications into real-world practice. Committed to supporting a collaborative development team, learning modern web technologies, and contributing to clean, responsive user interface
-                  </p>
+                  <div 
+                    className={`space-y-4 overflow-hidden duration-500 ease-in-out md:max-h-none ${showMore ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 md:opacity-100"}`}
+                    style={{ transitionProperty: "max-height, opacity" }}
+                  >
+                    <p>
+                      A motivated BSIS student seeking for an opportunity to use my skills and knowledge in a real-world environment. Eager to transition academic experience in building functional web applications into real-world practice. Committed to supporting a collaborative development team, learning modern web technologies, and contributing to clean, responsive user interface
+                    </p>
+                  </div>
+                  <button 
+                    onClick={() => setShowMore(!showMore)}
+                    className="md:hidden text-blue-600 dark:text-blue-400 font-bold flex w-full justify-center items-center gap-1 mt-2 hover:underline focus:outline-none transition-colors"
+                  >
+                    {showMore ? "Show Less" : "Read More"}
+                    <svg className={`w-4 h-4 transition-transform duration-300 ${showMore ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                   <Link href="/projects" className="px-8 py-3.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors shadow-lg hover:shadow-blue-500/30">
