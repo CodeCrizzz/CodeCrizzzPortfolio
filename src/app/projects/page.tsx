@@ -1,6 +1,8 @@
 import Reveal from "@/components/Reveal";
+import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
+import { title } from "process";
 
 // Main function component to display the projects page
 export default function Projects() {
@@ -21,9 +23,17 @@ export default function Projects() {
       linkText: "View Portfolio",
       external: false,
     },
+    {
+      title: "OG Coffee",
+      description: "Experience the finest specialty coffee in Dipolog City. Every cup tells a story of carefully sourced beans, expert roasting, and the art of brewing.",
+      image: "/assets/img/og_coffee_img.png",
+      link: "",
+      linkText: "In Development",
+      external: false,
+    }
   ];
 
-  // Return the component with the projects data
+  // Return the component with the projects data  
   return (
     <main className="flex-1 w-full max-w-[1100px] mx-auto my-12 px-5 flex flex-col items-center">
       <Reveal className="text-center mb-12">
