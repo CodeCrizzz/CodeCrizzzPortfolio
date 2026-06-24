@@ -41,10 +41,10 @@ export default function About() {
       <div className="flex flex-col gap-8">
         {/* Top Section - About Me & Image */}
         <Reveal className="w-full">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl border border-white/80 dark:border-slate-800 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14 transition-colors duration-300">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 dark:bg-slate-900/60 border border-white/80 dark:border-slate-800 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14 transition-colors duration-300">
             {/* Background glowing orbs */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/20 dark:bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
-            <div className="absolute bottom-0 -left-10 w-80 h-80 bg-purple-400/20 dark:bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/20 dark:bg-blue-500/10 rounded-full filter blur-2xl opacity-70 md:animate-pulse"></div>
+            <div className="absolute bottom-0 -left-10 w-80 h-80 bg-purple-400/20 dark:bg-purple-500/10 rounded-full filter blur-2xl opacity-70 md:animate-pulse" style={{ animationDelay: '2s' }}></div>
             
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-center gap-12">
               <div className="shrink-0 relative group">
@@ -109,7 +109,7 @@ export default function About() {
           
             <Reveal className="lg:col-span-2">
             {/* Tech Stack Section */}
-            <div className="h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl border border-white/80 dark:border-slate-800 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group transition-colors duration-300">
+            <div className="h-full bg-white/60 dark:bg-slate-900/60 border border-white/80 dark:border-slate-800 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group transition-colors duration-300">
               <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 dark:from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
               
               <div className="relative z-10">
@@ -144,17 +144,17 @@ export default function About() {
               <div className="absolute top-0 right-0 p-6 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-1000">
                 <GraduationCap size={128} />
               </div>
-              <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500/20 rounded-full blur-2xl"></div>
               
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-8">
-                  <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-2xl mb-6 border border-white/20 shadow-inner">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-2xl mb-6 border border-white/20 shadow-inner">
                     <GraduationCap className="text-blue-300" size={24} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">Education</h3>
                 </div>
                 
-                <div className="mt-auto space-y-5 bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors duration-500">
+                <div className="mt-auto space-y-5 bg-white/5 p-6 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors duration-500">
                   <div className="space-y-2">
                     <div className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-lg mb-2">
                       Present
