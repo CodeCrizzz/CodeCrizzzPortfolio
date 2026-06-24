@@ -53,7 +53,7 @@ export default function Contact() {
                 type="text" 
                 placeholder="Your Name" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600 dark:focus:border-blue-500"
               />
             </div>
             <div className="w-full">
@@ -61,7 +61,7 @@ export default function Contact() {
                 type="email" 
                 placeholder="Your Email" 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600 dark:focus:border-blue-500"
               />
             </div>
             <div className="w-full">
@@ -69,7 +69,7 @@ export default function Contact() {
                 placeholder="Your Message" 
                 rows={5} 
                 required 
-                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-inherit text-base outline-none transition-colors duration-500 focus:border-blue-600 dark:focus:border-blue-500 resize-y"
+                className="w-full p-3 md:p-4 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-lg font-inherit text-base outline-none transition-colors duration-300 focus:border-blue-600 dark:focus:border-blue-500 resize-y"
               ></textarea>
             </div>
             <button 
