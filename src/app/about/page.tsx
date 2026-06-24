@@ -29,14 +29,14 @@ export default function About() {
     { name: "PHP", icon: Server, color: "text-indigo-400" },
     { name: "C#", icon: FileCode, color: "text-purple-600" },
     { name: "React", icon: Atom, color: "text-blue-400"},
-    { name: "Next.js", icon: Blocks, color: "text-slate-800"},
+    { name: "Next.js", icon: Blocks, color: "text-slate-800 dark:text-slate-200"},
     { name: "Tailwind CSS", icon: Wind, color: "text-cyan-400"},
     { name: "Node.js", icon: Box, color: "text-green-600" },
     { name: "PostgreSQL", icon: Database, color: "text-blue-500" },
     { name: "MySQL", icon: Database, color: "text-orange-400" },
     { name: "Supabase", icon: Cloud, color: "text-green-500"},
     { name: "Git", icon: GitBranch, color: "text-orange-600"},
-    { name: "GitHub", icon: FaGithub, color: "text-slate-800"},
+    { name: "GitHub", icon: FaGithub, color: "text-slate-800 dark:text-slate-200"},
   ];
 
   return (
@@ -44,10 +44,10 @@ export default function About() {
       <div className="flex flex-col gap-8">
         {/* Top Section - About Me & Image */}
         <Reveal className="w-full">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-white/60 dark:bg-black/60 backdrop-blur-2xl border border-white/80 dark:border-zinc-800 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-14 transition-colors duration-300">
             {/* Background glowing orbs */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
-            <div className="absolute bottom-0 -left-10 w-80 h-80 bg-purple-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-400/20 dark:bg-blue-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
+            <div className="absolute bottom-0 -left-10 w-80 h-80 bg-purple-400/20 dark:bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" style={{ animationDelay: '2s' }}></div>
             
             <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-center gap-12">
               <div className="shrink-0 relative group">
@@ -57,7 +57,7 @@ export default function About() {
                   width={800}
                   height={1000}
                   quality={100}
-                  className="w-48 h-64 md:w-70 md:h-100 rounded-2xl border-4 border-white shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-48 h-64 md:w-70 md:h-100 rounded-2xl border-4 border-white dark:border-zinc-800 shadow-2xl relative z-10 object-cover transition-transform duration-500 hover:scale-105"
                   priority
                 />
               </div>
@@ -69,22 +69,22 @@ export default function About() {
                     Get To Know Me
                   </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black text-slate-800 mb-6 tracking-tight">
+                <h2 className="text-4xl md:text-5xl font-black text-slate-800 dark:text-white mb-6 tracking-tight">
                   Hi, I'm <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600">Christian Natividad</span>
                 </h2>
-                <div className="space-y-4 text-slate-600 leading-relaxed text-base md:text-lg font-medium">
+                <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base md:text-lg font-medium">
                   <p>
-                    I am a <strong className="text-slate-800">BS Information Systems</strong> student at JRMSU Main Campus. I build functional, high-efficiency web applications by combining system analysis with user-centric design.
+                    I am a <strong className="text-slate-800 dark:text-slate-200">BS Information Systems</strong> student at JRMSU Main Campus. I build functional, high-efficiency web applications by combining system analysis with user-centric design.
                   </p>
                   <p>
                     A motivated BSIS student seeking for an opportunity to use my skills and knowledge in a real-world environment. Eager to transition academic experience in building functional web applications into real-world practice. Committed to supporting a collaborative development team, learning modern web technologies, and contributing to clean, responsive user interface
                   </p>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
-                  <Link href="/projects" className="px-8 py-3.5 bg-slate-900 text-white rounded-full font-bold hover:bg-blue-600 transition-colors shadow-lg hover:shadow-blue-500/30">
+                  <Link href="/projects" className="px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full font-bold hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors shadow-lg hover:shadow-blue-500/30">
                     View My Work
                   </Link>
-                  <Link href="/contact" className="px-8 py-3.5 bg-white text-slate-800 rounded-full font-bold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all shadow-sm">
+                  <Link href="/contact" className="px-8 py-3.5 bg-white dark:bg-zinc-900 text-slate-800 dark:text-slate-200 rounded-full font-bold border border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 hover:bg-slate-50 dark:hover:bg-zinc-800 transition-all shadow-sm">
                     Contact Me
                   </Link>
                 </div>
@@ -98,15 +98,15 @@ export default function About() {
           
             <Reveal className="lg:col-span-2">
             {/* Tech Stack Section */}
-            <div className="h-full bg-white/60 backdrop-blur-2xl border border-white/80 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+            <div className="h-full bg-white/60 dark:bg-black/60 backdrop-blur-2xl border border-white/80 dark:border-zinc-800 rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-10 relative overflow-hidden group transition-colors duration-300">
+              <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 dark:from-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
               
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl shadow-inner border border-blue-200">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl shadow-inner border border-blue-200 dark:border-blue-800/50">
                     <Code size={24} />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-slate-800">Tech Stack</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-white">Tech Stack</h3>
                 </div>
                 
                 {/* Grid layout for the tech stack */}
@@ -116,10 +116,10 @@ export default function About() {
                     return (
                     <div
                       key={skill.name}
-                      className="flex flex-col items-center justify-center gap-3 bg-white p-5 rounded-2xl border border-slate-100 hover:border-blue-300 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(37,99,235,0.15)] cursor-pointer group/skill"
+                      className="flex flex-col items-center justify-center gap-3 bg-white dark:bg-zinc-900 p-5 rounded-2xl border border-slate-100 dark:border-zinc-800 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgb(37,99,235,0.15)] cursor-pointer group/skill"
                     >
                       <Icon className={`${skill.color} group-hover/skill:scale-110 group-hover/skill:rotate-3 transition-transform duration-500`} size={40} />
-                      <span className="font-bold text-slate-700 text-sm">{skill.name}</span>
+                      <span className="font-bold text-slate-700 dark:text-slate-300 text-sm">{skill.name}</span>
                     </div>
                   )})}
                 </div>

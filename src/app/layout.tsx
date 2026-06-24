@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 // Font for the website
 const inter = Inter({ subsets: ["latin"] });
@@ -20,13 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-slate-50 text-slate-800 flex flex-col min-h-screen overflow-x-hidden`}
+        className={`${inter.className} bg-white text-slate-800 dark:bg-black dark:text-slate-100 flex flex-col min-h-screen overflow-x-hidden transition-colors duration-300`}
       >
-        <Navigation />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navigation />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
