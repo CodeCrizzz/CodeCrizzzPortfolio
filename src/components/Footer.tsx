@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
 // Main function component that is used to display the footer of the website 
 export default function Footer() {
@@ -13,7 +14,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-slate-800 text-2xl transition-all duration-500 hover:text-blue-600 hover:-translate-y-1"
           >
-            <i className="fa-brands fa-github"></i>
+            <FaGithub size={24} />
           </Link>
           <Link
             href="https://www.facebook.com/christian.natividad.3720"
@@ -21,7 +22,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-slate-800 text-2xl transition-all duration-500 hover:text-blue-600 hover:-translate-y-1"
           >
-            <i className="fa-brands fa-facebook"></i>
+            <FaFacebook size={24} />
           </Link>
           <Link
             href="https://www.instagram.com/natividadchristian05/"
@@ -29,7 +30,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-slate-800 text-2xl transition-all duration-500 hover:text-blue-600 hover:-translate-y-1"
           >
-            <i className="fa-brands fa-instagram"></i>
+            <FaInstagram size={24} />
           </Link>
         </div>
       </div>

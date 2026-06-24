@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Home, User, Code, Mail, Menu } from "lucide-react";
 
 // Main function component that is used to navigate between the pages 
 export default function Navigation() {
@@ -11,10 +12,10 @@ export default function Navigation() {
 
   // Array of links to navigate between the pages
   const links = [
-    { name: "Home", href: "/", icon: "fas fa-home" },
-    { name: "About", href: "/about", icon: "fas fa-user" },
-    { name: "Projects", href: "/projects", icon: "fas fa-code" },
-    { name: "Contact", href: "/contact", icon: "fas fa-envelope" },
+    { name: "Home", href: "/", icon: Home },
+    { name: "About", href: "/about", icon: User },
+    { name: "Projects", href: "/projects", icon: Code },
+    { name: "Contact", href: "/contact", icon: Mail },
   ];
 
   // Return the component with the navigation
@@ -35,7 +36,7 @@ export default function Navigation() {
         htmlFor="menu-toggle"
         className="block md:hidden z-[2001] cursor-pointer text-2xl text-blue-600 transition-transform duration-500 peer-checked:rotate-90 peer-checked:fixed peer-checked:right-[10%]"
       >
-        <i className="fas fa-bars"></i>
+        <Menu size={28} />
       </label>
 
       {/* List of links to navigate between the pages */}
@@ -46,6 +47,7 @@ export default function Navigation() {
       >
         {links.map((link) => {
           const isActive = pathname === link.href;
+          const Icon = link.icon;
           return (
             <li key={link.name} className="w-full md:w-auto">
               <Link
@@ -55,7 +57,7 @@ export default function Navigation() {
                   isActive ? "md:text-blue-600 bg-blue-600 text-white md:bg-transparent" : ""
                 }`}
               >
-                <i className={`${link.icon} w-5 text-center md:hidden block`}></i>
+                <Icon className="w-5 text-center md:hidden block" size={20} />
                 {link.name}
                 <span
                   className={`hidden md:block absolute w-full h-[2px] bottom-0 left-0 bg-blue-600 origin-bottom-right transition-transform duration-500 ease-out ${
