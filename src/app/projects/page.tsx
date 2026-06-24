@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import { link } from "fs";
 import Image from "next/image";
@@ -6,6 +9,8 @@ import { title } from "process";
 
 // Main function component to display the projects page
 export default function Projects() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const projects = [
     {
       title: "Boarding House Management System",
@@ -42,22 +47,28 @@ export default function Projects() {
       </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[1000px] justify-center">
-        {projects.map((project, index) => (
-          <Reveal key={index} className="w-full relative h-[250px] md:h-[300px] rounded-[20px] overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-[0_10px_25px_rgba(0,0,0,0.05)] group transition-colors duration-300">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              unoptimized
-              className="object-cover transition-all duration-500 ease-in-out group-hover:blur-sm group-hover:scale-110"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-            
-            <div className="absolute bottom-0 w-full bg-white/95 dark:bg-slate-900/95 p-5 text-center z-10 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-5">
-              <h3 className="m-0 text-[0.9rem] text-slate-800 dark:text-slate-200 font-black">{project.title}</h3>
-            </div>
+        {projects.map((project, index) => {
+          const isActive = activeIndex === index;
+          return (
+          <Reveal key={index} className="w-full relative h-[250px] md:h-[300px]">
+            <div 
+              className="w-full h-full relative rounded-[20px] overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-[0_10px_25px_rgba(0,0,0,0.05)] group transition-colors duration-300 cursor-pointer"
+              onClick={() => setActiveIndex(isActive ? null : index)}
+            >
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                unoptimized
+                className={`object-cover transition-all duration-500 ease-in-out md:group-hover:blur-sm md:group-hover:scale-110 ${isActive ? "blur-sm scale-110" : ""}`}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              
+              <div className={`absolute bottom-0 w-full bg-white/95 dark:bg-slate-900/95 p-5 text-center z-10 transition-all duration-500 ease-in-out md:group-hover:opacity-0 md:group-hover:translate-y-5 ${isActive ? "opacity-0 translate-y-5" : ""}`}>
+                <h3 className="m-0 text-[0.9rem] text-slate-800 dark:text-slate-200 font-black">{project.title}</h3>
+              </div>
 
-            <div className="absolute inset-0 bg-white/85 dark:bg-slate-900/90 flex items-center justify-center p-8 opacity-0 z-20 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+              <div className={`absolute inset-0 bg-white/85 dark:bg-slate-900/90 flex items-center justify-center p-8 z-20 transition-opacity duration-500 ease-in-out md:group-hover:opacity-100 ${isActive ? "opacity-100" : "opacity-0 pointer-events-none md:pointer-events-auto"}`}>
               <div className="text-center text-black dark:text-white">
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
                 <p className="text-sm leading-relaxed mb-5 font-bold">&quot;{project.description}&quot;</p>
@@ -79,9 +90,11 @@ export default function Projects() {
                   </Link>
                 )}
               </div>
+              </div>
             </div>
           </Reveal>
-        ))}
+          );
+        })}
       </div>
     </main>
   );
