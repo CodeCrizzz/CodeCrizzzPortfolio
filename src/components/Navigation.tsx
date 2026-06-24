@@ -55,8 +55,10 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 md:text-slate-600 dark:md:text-slate-300 text-slate-800 dark:text-slate-200 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent dark:md:bg-transparent bg-slate-100 dark:bg-slate-800 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent dark:md:hover:bg-transparent hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 md:hover:text-blue-600 dark:md:hover:text-blue-400 md:hover:translate-x-0 hover:translate-x-[5px] group ${
-                  isActive ? "md:text-blue-600 dark:md:text-blue-400 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 md:bg-transparent dark:md:bg-transparent" : ""
+                className={`flex items-center gap-3 font-semibold md:text-base text-lg md:p-1 p-3 rounded-lg md:rounded-none relative transition-all duration-500 md:bg-transparent dark:md:bg-transparent md:hover:bg-transparent dark:md:hover:bg-transparent md:hover:translate-x-0 group ${
+                  isActive 
+                    ? "bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 md:text-blue-600 dark:md:text-blue-400" 
+                    : "bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 md:text-slate-600 dark:md:text-slate-300 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 md:hover:text-blue-600 dark:md:hover:text-blue-400 hover:translate-x-[5px]"
                 }`}
               >
                 <Icon className="w-5 text-center md:hidden block" size={20} />
