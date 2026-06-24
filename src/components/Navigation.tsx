@@ -54,14 +54,14 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 md:text-slate-600 dark:md:text-slate-300 text-slate-800 dark:text-slate-200 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent dark:md:bg-transparent bg-slate-100 dark:bg-zinc-800 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent dark:md:hover:bg-transparent hover:bg-blue-600 hover:text-white md:hover:text-blue-600 dark:md:hover:text-blue-400 md:hover:translate-x-0 hover:translate-x-[5px] group ${
-                  isActive ? "md:text-blue-600 dark:md:text-blue-400 bg-blue-600 text-white md:bg-transparent dark:md:bg-transparent" : ""
+                className={`flex items-center gap-3 md:text-slate-600 dark:md:text-slate-300 text-slate-800 dark:text-slate-200 font-semibold md:text-base text-lg md:p-1 p-3 md:bg-transparent dark:md:bg-transparent bg-slate-100 dark:bg-zinc-800 rounded-lg md:rounded-none relative transition-all duration-500 md:hover:bg-transparent dark:md:hover:bg-transparent hover:bg-blue-600 dark:hover:bg-blue-900/30 hover:text-white dark:hover:text-blue-400 md:hover:text-blue-600 dark:md:hover:text-blue-400 md:hover:translate-x-0 hover:translate-x-[5px] group ${
+                  isActive ? "md:text-blue-600 dark:md:text-blue-400 bg-blue-600 dark:bg-blue-900/40 text-white dark:text-blue-400 md:bg-transparent dark:md:bg-transparent" : ""
                 }`}
               >
                 <Icon className="w-5 text-center md:hidden block" size={20} />
                 {link.name}
                 <span
-                  className={`hidden md:block absolute w-full h-[2px] bottom-0 left-0 bg-blue-600 origin-bottom-right transition-transform duration-500 ease-out ${
+                  className={`hidden md:block absolute w-full h-[2px] bottom-0 left-0 bg-blue-600 dark:bg-blue-400 origin-bottom-right transition-transform duration-500 ease-out ${
                     isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100 group-hover:origin-bottom-left"
                   }`}
                 ></span>
