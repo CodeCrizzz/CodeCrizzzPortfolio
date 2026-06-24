@@ -24,21 +24,22 @@ export default function Navigation() {
     <nav className="flex justify-between items-center px-6 md:px-[10%] py-5 bg-white dark:bg-slate-950 shadow-[0_2px_10px_rgba(0,0,0,0.05)] dark:shadow-none dark:border-b dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
       <div className="font-extrabold text-2xl text-blue-600 dark:text-white">{"CodeCrizzz</>"}</div>
 
-      <input
-        type="checkbox"
-        id="menu-toggle"
-        className="hidden"
-        checked={isOpen}
-        onChange={() => setIsOpen(!isOpen)}
-      />
-
-      {/* Hamburger menu button for mobile devices */}
-      <label
-        htmlFor="menu-toggle"
-        className="block md:hidden z-[2001] cursor-pointer text-2xl text-blue-600 transition-transform duration-500 peer-checked:rotate-90 peer-checked:fixed peer-checked:right-[10%]"
-      >
-        <Menu size={28} />
-      </label>
+      <div className={`flex items-center gap-4 md:hidden z-[2001] transition-all duration-500 ${isOpen ? "fixed right-[10%]" : ""}`}>
+        <ThemeToggle />
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          className="hidden"
+          checked={isOpen}
+          onChange={() => setIsOpen(!isOpen)}
+        />
+        <label
+          htmlFor="menu-toggle"
+          className={`cursor-pointer text-2xl text-blue-600 transition-transform duration-500 ${isOpen ? "rotate-90" : ""}`}
+        >
+          <Menu size={28} />
+        </label>
+      </div>
 
       {/* List of links to navigate between the pages */}
       <ul
@@ -69,7 +70,7 @@ export default function Navigation() {
             </li>
           );
         })}
-        <li className="flex items-center md:ml-4 mt-4 md:mt-0">
+        <li className="hidden md:flex items-center md:ml-4 mt-4 md:mt-0">
           <ThemeToggle />
         </li>
       </ul>
