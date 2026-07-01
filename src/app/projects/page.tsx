@@ -35,6 +35,14 @@ export default function Projects() {
       link: "",
       linkText: "In Development",
       external: false,
+    },
+    {
+      title: "TechDepot Inventory Management System",
+      description: "A system that tracks assets, deployments, and inventory efficiently.",
+      image: "/assets/img/techDepot_IMS.png",
+      link: "",
+      linkText: "In Development",
+      external: false,
     }
   ];
 
