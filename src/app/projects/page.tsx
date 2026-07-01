@@ -58,7 +58,7 @@ export default function Projects() {
         {projects.map((project, index) => {
           const isActive = activeIndex === index;
           return (
-          <Reveal key={index} className="w-full relative h-[300px] md:h-[400px]">
+          <Reveal key={index} className="w-full relative aspect-video">
             <div 
               className="w-full h-full relative rounded-[20px] overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-[0_10px_25px_rgba(0,0,0,0.05)] group transition-colors duration-300 cursor-pointer"
               onClick={() => setActiveIndex(isActive ? null : index)}
