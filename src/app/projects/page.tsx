@@ -54,7 +54,7 @@ export default function Projects() {
         <p className="text-slate-500 dark:text-slate-300 text-lg">Projects I developed when learning Web Development</p>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full justify-center">
+      <div className="grid grid-cols-1 gap-12 w-full max-w-[1200px] mx-auto justify-center">
         {projects.map((project, index) => {
           const isActive = activeIndex === index;
           return (
