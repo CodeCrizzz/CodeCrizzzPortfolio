@@ -48,13 +48,13 @@ export default function Projects() {
 
   // Return the component with the projects data  
   return (
-    <main className="flex-1 w-full max-w-[1500px] mx-auto my-12 px-5 flex flex-col items-center">
+    <main className="flex-1 w-full max-w-[1100px] mx-auto my-12 px-5 flex flex-col items-center">
       <Reveal className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl text-slate-800 dark:text-white font-bold mb-3">My Projects</h1>
         <p className="text-slate-500 dark:text-slate-300 text-lg">Projects I developed when learning Web Development</p>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full justify-center">
         {projects.map((project, index) => {
           const isActive = activeIndex === index;
           return (
