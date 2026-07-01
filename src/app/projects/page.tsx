@@ -48,7 +48,7 @@ export default function Projects() {
 
   // Return the component with the projects data  
   return (
-    <main className="flex-1 w-full max-w-[1200px] mx-auto my-12 px-5 flex flex-col items-center">
+    <main className="flex-1 w-full max-w-[1500px] mx-auto my-12 px-5 flex flex-col items-center">
       <Reveal className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl text-slate-800 dark:text-white font-bold mb-3">My Projects</h1>
         <p className="text-slate-500 dark:text-slate-300 text-lg">Projects I developed when learning Web Development</p>
@@ -58,7 +58,7 @@ export default function Projects() {
         {projects.map((project, index) => {
           const isActive = activeIndex === index;
           return (
-          <Reveal key={index} className="w-full relative h-[250px] md:h-[300px]">
+          <Reveal key={index} className="w-full relative h-[300px] md:h-[400px]">
             <div 
               className="w-full h-full relative rounded-[20px] overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-[0_10px_25px_rgba(0,0,0,0.05)] group transition-colors duration-300 cursor-pointer"
               onClick={() => setActiveIndex(isActive ? null : index)}
