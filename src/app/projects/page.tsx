@@ -68,7 +68,7 @@ export default function Projects() {
                 alt={project.title}
                 fill
                 unoptimized
-                className={`object-cover transition-all duration-500 ease-in-out md:group-hover:blur-sm md:group-hover:scale-110 ${isActive ? "blur-sm scale-110" : ""}`}
+                className={`object-contain transition-all duration-500 ease-in-out md:group-hover:blur-sm md:group-hover:scale-110 ${isActive ? "blur-sm scale-110" : ""}`}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               
